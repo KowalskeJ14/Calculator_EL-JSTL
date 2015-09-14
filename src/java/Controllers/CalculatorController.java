@@ -19,10 +19,10 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author kowal_000
  */
-@WebServlet(name = "Lab3Controller", urlPatterns = {"/Lab3Controller"})
-public class Lab3Controller extends HttpServlet {
+@WebServlet(name = "CalculatorController", urlPatterns = {"/CalculatorController"})
+public class CalculatorController extends HttpServlet {
 
-    private static final String RESULT_PAGE = "Lab3.jsp";
+    private static final String RESULT_PAGE = "Calculator.jsp";
     
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>

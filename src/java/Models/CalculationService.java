@@ -57,7 +57,5 @@ public class CalculationService {
     public String getCircleArea() {
         circleArea = (radius * radius * Math.PI);
         return Double.toString(circleArea);
-    }
-    
-    
+    }    
 }

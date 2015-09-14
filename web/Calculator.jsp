@@ -15,19 +15,10 @@
         <h1>Calculator Application</h1>        
         
         <form method="Get" action="Lab3Controller">
-            <%
-                Object obj = request.getAttribute("area");
-                
-                String area = "";
-                if(obj != null){
-                    area = (String) obj;
-                }
-                
-            %>
-            <label>The area is : <%=area %></label>
+            <label>The area is : ${area}</label>
         </form>
         
-        <form name="rectangleForm" id="rectangle" action="Lab3Controller">
+        <form name="rectangleForm" id="rectangle" action="CalculatorController">
             <h2>Rectangle Calculator</h2>
             <input placeholder="Enter in the width" type="text" name="inputWidth" id="inputWidth"  />
             <br>
@@ -42,7 +33,7 @@
             
         </form>
         <br>
-        <form name="triangleForm" id="triangle" action="Lab3Controller">
+        <form name="triangleForm" id="triangle" action="CalculatorController">
             <h2>Triangle Calculator</h2>
             <input placeholder="Enter base length" type="text" name="inputBase" id="inputBase"/>
             <br>
@@ -53,7 +44,7 @@
         </form>
         <br>
         <br>
-       <form name="circleForm" id="circle" action="Lab3Controller">
+       <form name="circleForm" id="circle" action="CalculatorController">
            <h2>Circle Calculator</h2>
             <input placeholder="Enter a radius" type="text" name="inputRadius" id="inputRadius"/>
             <br>
